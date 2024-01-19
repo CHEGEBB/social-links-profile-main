@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+body {
+  background-color: hsl(0, 0%, 8%);
+}
+
+h1, h2, p {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 12%);
+  width: 300px;
+  margin-left: 500px;
+  height: 500px;
+  margin-top: 50px;
+  border-radius: 12px;
+  /* Mobile design */
+}
+.container .profile {
+  display: flex;
+  flex-direction: column;
+  margin-top: -150px;
+}
+.container .profile .profile-pic img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-left: 100px;
+}
+.container .about {
+  width: 250px;
+}
+.container .about h1 {
+  color: white;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.container .about p {
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  margin-top: 10px;
+  width: 300px;
+}
+.container .about h2 {
+  color: hsl(75, 94%, 57%);
+  font-size: 12px;
+  margin-left: 60px;
+}
+.container .socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: -150px;
+}
+.container .socials .github,
+.container .socials .frontend,
+.container .socials .linkedin,
+.container .socials .twitter,
+.container .socials .instagram {
+  background-color: hsl(0, 0%, 20%);
+  width: 230px;
+  text-align: center;
+  border-radius: 5px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.container .socials .github:hover,
+.container .socials .frontend:hover,
+.container .socials .linkedin:hover,
+.container .socials .twitter:hover,
+.container .socials .instagram:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
+  cursor: pointer;
+}
+.container .socials .text1,
+.container .socials .text2,
+.container .socials .text3,
+.container .socials .text4,
+.container .socials .text5 {
+  margin-top: -8px;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-left: 30px;
+    margin-top: 0px;
+    width: 300px;
+    height: 450px;
+    border-radius: 12px;
+  }
+  .container .profile {
+    margin-top: 20px;
+  }
+  .container .profile .profile-pic img {
+    margin-left: 90px;
+  }
+  .container .about h1 {
+    margin-left: 50px;
+  }
+  .container .about p {
+    width: 300px;
+  }
+  .container .about h2 {
+    margin-left: 50px;
+  }
+  .container .socials {
+    margin-bottom: 0px;
+  }
+  .container .socials .github,
+  .container .socials .frontend,
+  .container .socials .linkedin,
+  .container .socials .twitter,
+  .container .socials .instagram {
+    width: 250px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
